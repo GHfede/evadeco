@@ -1,3 +1,5 @@
+import os
+from pathlib import Path
 """
 Django settings for evadeco project.
 
@@ -75,14 +77,13 @@ WSGI_APPLICATION = 'evadeco.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/6.1/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',      
         'USER': 'postgres',      
         'PASSWORD': 'postgres',  
-        'HOST': 'db',            
+        'HOST': os.getenv('DB_HOST', 'db'),            
         'PORT': '5432',
     }
 }
