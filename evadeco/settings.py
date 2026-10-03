@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'evadeco.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',      # ← de docker-compose POSTGRES_DB
-        'USER': 'postgres',      # ← de docker-compose POSTGRES_USER
-        'PASSWORD': 'postgres',  # ← de docker-compose POSTGRES_PASSWORD
-        'HOST': 'db',            # ← nombre del servicio en docker-compose
+        'NAME': 'postgres',      
+        'USER': 'postgres',      
+        'PASSWORD': 'postgres',  
+        'HOST': 'localhost',            
         'PORT': '5432',
     }
 }
