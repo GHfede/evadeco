@@ -28,7 +28,10 @@ SECRET_KEY = 'django-insecure-bdutl-+d!&&w9v!19buqn3za3fwa8_c!9%=j9v!#ub%@*&s(g&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+""
+ALLOWED_HOSTS = ['mi-dominio.com', 'www.mi-dominio.com'] #usar dominio (PRODUCCION REAL).
+""
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
